@@ -23,6 +23,9 @@ const cost__greengrocery = document.getElementById("cost__greengrocery");
 let logList = [];
 const gastos = { id: "", fecha: "", nombre: "", costo: "", category: "" };
 
+
+const setStorage = localStorage.getItem("logist")
+
 // mostrar esos valores
 const submitForm = (e) => {
   e.preventDefault();
@@ -38,7 +41,7 @@ const submitForm = (e) => {
   gastos.nombre = inputValueName.value;
   gastos.costo = inputValueCost.value;
   gastos.category = selectionInput.value;
-
+   
   //llenamos el objeto listaGastos con la info de gastos solo si hay datos en los input
 
   if (gastos.costo == "" || gastos.nombre == "" || gastos.category == "-----") {
@@ -48,6 +51,8 @@ const submitForm = (e) => {
     dataLog();
     cleanInputs();
     tableLogs();
+    localStorage.setItem("logist",JSON.stringify(logList))
+    console.log(setStorage)
   }
 };
 
@@ -59,6 +64,7 @@ const dataLog = () => {
     const { id, fecha, nombre, costo, category } = i;
     createLog.innerText = `${fecha} ${nombre} $${costo} ${category}`;
     createLog.className = "logUp"
+ 
   });
   lastLog.appendChild(createLog);
   
