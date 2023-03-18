@@ -22,25 +22,30 @@
     <header>
       <h1>Cuentas</h1>
     </header>
-
     <section class="formLogSection">
-      
-
-      <form id="form" action="submit">
+      <form id="addBill">
         <div class="input-group flex-nowrap mb-2">
-          <span  class="input-group-text labelForms">Descripción</span>
-          <input maxlength="10" id="pharmacyInputName" type="text" class="form-control" />
+          <span class="input-group-text labelForms">Descripción</span>
+          <input
+            maxlength="10"
+            id="pharmacyInputName"
+            type="text"
+            class="form-control"
+          />
         </div>
-
         <div class="input-group flex-nowrap mb-2">
           <span class="input-group-text labelForms">Costo $</span>
           <input id="pharmacyInputCost" type="number" class="form-control" />
         </div>
-
         <div class="input-group inputSelect mb-3">
-          <label class="input-group-text labelForms" class="labelForms" for="inputGroupSelect02">Categoría</label>
+          <label
+            class="input-group-text labelForms"
+            class="labelForms"
+            for="inputGroupSelect02"
+            >Categoría</label
+          >
           <select class="form-select" id="myList">
-            <option selected>-----</option>
+            <option value="" selected disabled>-----</option>
             <option>Farmacia</option>
             <option>Supermercado</option>
             <option>Verduleria</option>
@@ -49,105 +54,12 @@
             <option>Valeria</option>
             <option>Marcela</option>
           </select>
-         
           <button type="submit" id="addButton">Agregar</button>
         </div>
       </form>
-
-      <div id="lastLog"></div>
+      <div id="logs"></div>
     </section>
-
-    <section id="tablesLog" style="margin-left: 60px">
-      <table id="pharmacy" class="table table-success table-striped">
-        <caption>
-          FARMACIA $<Span id="cost__pharmacy">0</Span>
-        </caption>
-        <tr class="tableRow">
-          <th>Fecha</th>
-          <th>Descripción</th>
-          <th>Costo</th>
-          <th>Eliminar</th>
-        </tr>
-      </table>
-
-      <table id="market" class="table table-success table-striped">
-        <caption>
-          SUPERMERCADO $<Span id="cost__market">0</Span>
-        </caption>
-        <tr class="tableRow">
-          <th>Fecha</th>
-          <th>Descripción</th>
-          <th>Costo</th>
-          <th>Eliminar</th>
-        </tr>
-      </table>
-
-      <table id="greengrocery" class="table table-success table-striped">
-        <caption>
-          VERDULERÍA $<Span id="cost__greengrocery">0</Span>
-        </caption>
-        <tr class="tableRow">
-          <th>Fecha</th>
-          <th>Descripción</th>
-          <th>Costo</th>
-          <th>Eliminar</th>
-        </tr>
-        <tr></tr>
-      </table>
-
-      <table id="valeria" class="table table-success table-striped">
-        <caption> 
-          VALERIA $<Span id="cost__valeria">0</Span>
-        </caption>
-        <tr class="tableRow">
-          <th>Fecha</th>
-          <th>Descripción</th>
-          <th>Costo</th>
-          <th>Eliminar</th>
-        </tr>
-        <tr></tr>
-      </table>
-
-      <table id="others" class="table table-success table-striped">
-        <caption>
-          VARIOS $<Span id="cost__varios">0</Span>
-        </caption>
-        <tr class="tableRow">
-          <th>Fecha</th>
-          <th>Descripción</th>
-          <th>Costo</th>
-          <th>Eliminar</th>
-        </tr>
-        <tr></tr>
-      </table>
-
-      <table id="emilce" class="table table-success table-striped">
-        <caption>
-          EMILCE $<Span id="cost__emilce">0</Span>
-        </caption>
-        <tr class="tableRow">
-          <th>Fecha</th>
-          <th>Descripción</th>
-          <th>Costo</th>
-          <th>Eliminar</th>
-        </tr>
-        <tr></tr>
-      </table>
-
-      <table id="marcela" class="table table-success table-striped">
-        <caption>
-          MARCELA $<Span id="cost__marcela">0</Span>
-        </caption>
-        <tr class="tableRow">
-          <th>Fecha</th>
-          <th>Descripción</th>
-          <th>Costo</th>
-          <th>Eliminar</th>
-        </tr>
-        <tr></tr>
-      </table>
-    </section>
+    <section id="root"></section>
   </body>
   <script type="module" src="./index.js"></script>
-  <script type="module" src="./Category/category.js"></script>
 </html>
