@@ -1,11 +1,11 @@
 #tablesLog{
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
     gap: 5%;
-    width: 90% !important;
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 #tablesLog caption{
@@ -83,8 +83,27 @@
 }
 
 .deleteButton{
-    background-color: rgba(255, 0, 0, 0.419);
-    border-radius: 50%;
+border: none;
+background-color: white;
+padding: 5px;
+
     
+}
+#costTotal{
     
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #F1F1F1;
+    font-weight: 500;
+    border: solid 1px #F1F1F1;
+}
+
+.costTotal__Cont{
+    
+    margin-left: -80px;
+    margin-bottom: 130px;
+}
+
+.countTitleCont{   
+    margin-left: 50px !important
 }
