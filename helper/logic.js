@@ -20,6 +20,7 @@ import {
   cost__valeria,
   cost__greengrocery,
   costTotal
+  ,dropSelectButton
 } from "./helper.js";
 
 let logList = JSON.parse(localStorage.getItem("logist")) || [];
@@ -30,6 +31,7 @@ const cv = []
 const cleanInputs = () => {
   inputValueName.value = "";
   inputValueCost.value = "";
+ 
 };
 // agregar cada dato a su tabla correspondiente
 const tableLogs = () => {
@@ -185,4 +187,5 @@ export {
   callCount,
   dataLog,
   totalCost,
+  
 };

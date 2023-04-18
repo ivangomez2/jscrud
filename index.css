@@ -1,85 +1,90 @@
 #tablesLog{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: center;
-    gap: 5%;
-    padding-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  gap: 5%;
+  padding-top: 80px;
 }
 
 #tablesLog caption{
-    font-weight: 600;
+  font-weight: 600;
 }
 
 #marcela ,#emilce,#valeria, #market , #pharmacy , #greengrocery,#others{
-    border: solid 1px #C7DBD2;
-    text-align: center;
-    font-weight: 500;
-    
+  border: solid 1px #C7DBD2;
+  text-align: center;
+  font-weight: 500;
+  
+}
+
+#tablesLog caption{
+ font-weight: 600;
+ color: red;
 }
 
 .tableRow{
- max-height: 30px;
- position: sticky !important;
+max-height: 30px;
+position: sticky !important;
 }
 
 .inputSelect{
-    width: 300px !important;
+  width: 300px !important;
 }
 
 #form{
-    margin-left: 55px;
+  margin-left: 55px;
 }
 .logUp{
-    background-color: #C7DBD2 ;
+  background-color: #C7DBD2 ;
 }
 
 .table tr{
-    width: 10px !important;
-    height: 0px !important;
+  width: 10px !important;
+  height: 0px !important;
 }
 
 
 #addButton{
-    background-color: #C7DBD2;
-    border-radius: 10%;
-    margin-left: 30px;
-    color: #00ca6f;
-    font-weight: 600;
-    
+  background-color: #C7DBD2;
+  border-radius: 10%;
+  margin-left: 30px;
+  color: #00ca6f;
+  font-weight: 600;
+  
 }
 
 .labelForms{
-    width: 100px !important;
-    text-align: center;
-    align-items: center;
+  width: 100px !important;
+  text-align: center;
+  align-items: center;
 }
 
 .formLogSection{
-    display: flex;
-    gap: 80px;
-    align-items: center;
+  display: flex;
+  gap: 80px;
+  align-items: center;
 }
 
 #lastLog{
-    overflow: scroll;
-    height: 200px;
-    text-align: center;
-    width: 400px;
-    font-weight: 500;
-    
+  overflow: scroll;
+  height: 200px;
+  text-align: center;
+  width: 400px;
+  font-weight: 500;
+  
 }
 
 #lastLog button {
-    margin-left: 30px;
-    border-radius: 50%;
-    background-color: #C7DBD2;
+  margin-left: 30px;
+  border-radius: 50%;
+  background-color: #C7DBD2;
 }
 
 .lastLogText{
-    text-align: center;
-    margin-left: 30px;
+  text-align: center;
+  margin-left: 30px;
 }
 
 .deleteButton{
@@ -87,23 +92,23 @@ border: none;
 background-color: white;
 padding: 5px;
 
-    
+  
 }
 #costTotal{
-    
-    border-radius: 10px;
-    padding: 5px;
-    background-color: #F1F1F1;
-    font-weight: 500;
-    border: solid 1px #F1F1F1;
+  
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #F1F1F1;
+  font-weight: 500;
+  border: solid 1px #F1F1F1;
 }
 
 .costTotal__Cont{
-    
-    margin-left: -80px;
-    margin-bottom: 130px;
+  
+  margin-left: -80px;
+  margin-bottom: 130px;
 }
 
 .countTitleCont{   
-    margin-left: 50px !important
+  margin-left: 50px !important
 }

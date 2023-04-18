@@ -22,16 +22,22 @@
   </head>
   <body>
     <header class="countTitleCont">
-      <h1 >Cuentas</h1>
+      <h1>Cuentas</h1>
     </header>
 
     <section class="formLogSection">
       
 
       <form id="form" action="submit">
+      
+        <div class="input-group flex-nowrap mb-2">
+          <span  class="input-group-text labelForms">Fecha</span>
+          <input autocomplete="off" id="dateForm" type="date" class="form-control" />
+        </div>
+
         <div class="input-group flex-nowrap mb-2">
           <span  class="input-group-text labelForms">Descripción</span>
-          <input maxlength="10" id="pharmacyInputName" type="text" class="form-control" />
+          <input autocomplete="off" id="pharmacyInputName" type="text" class="form-control" />
         </div>
 
         <div class="input-group flex-nowrap mb-2">
@@ -132,7 +138,7 @@
         <caption>
           EMILCE $<Span id="cost__emilce">0</Span>
         </caption>
-        <tr class="tableRow">
+        <tr id="33" class="tableRow">
           <th>Fecha</th>
           <th>Descripción</th>
           <th>Costo</th>
@@ -160,5 +166,6 @@
   <script type="module" src="./helper/logic.js"></script>
   <script type="module" src="./helper/storageData.js"></script>p
   <script type="module" src="./helper/form.js"></script>
+  <script type="module" src="./helper/arrayReverse.js"> </script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </html>

@@ -22,9 +22,14 @@ const cost__valeria = document.getElementById("cost__valeria");
 const cost__greengrocery = document.getElementById("cost__greengrocery");
 const pharmacy = document.getElementById("pharmacy");
 const costTotal = document.getElementById("costTotal")
+const inputValueDate = document.getElementById("dateForm")
+const dropSelectButton = document.getElementsByClassName("form-select")
+
+
 
 export {
   pharmacy__cost,
+  inputValueDate,
   costTotal,
   market,
   greengrocery,
@@ -45,4 +50,5 @@ export {
   cost__emilce,
   cost__valeria,
   cost__greengrocery,
+  dropSelectButton
 };
